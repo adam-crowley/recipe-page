@@ -59,13 +59,6 @@ h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
-h3 {
-  font-family: 'Outfit', serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--Rose-800);
-  margin-bottom: 0.75rem;
-}
 p {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -147,6 +140,13 @@ strong {
   border-radius: 0.75rem;
   background-color: var(--Rose-50);
   padding: 1.5rem 2rem;
+}
+.main__prep p {
+  font-family: 'Outfit', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--Rose-800);
+  margin-bottom: 0.75rem;
 }
 .main__prep li::marker {
   color: var(--Rose-800);
