@@ -26,7 +26,6 @@ body {
   background-color: var(--Stone-100);
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0;
@@ -39,31 +38,117 @@ h5,
 h6 {
   font-family: 'Young Serif', serif;
   font-weight: 400;
+  margin: 0;
 }
 h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   line-height: 1;
-  margin: 0;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  color: var(--Stone-900);
+}
+h2 {
+  font-size: 1.75rem;
+  color: var(--Brown-800);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-family: 'Outfit', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--Rose-800);
+  margin-bottom: 0.75rem;
 }
 p {
-  font-size: 0.875rem;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+ul {
+  padding-left: 1rem;
   margin: 0;
+}
+ol {
+  padding-left: 1rem;
+  margin: 0;
+}
+strong {
+  font-weight: 700;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 46rem;
   max-width: 100%;
   background-color: var(--white);
-  padding: 1.5rem;
-  border-radius: 0.75rem;
+  padding: 3rem 3rem 2rem;
+  border-radius: 1.5rem;
+  margin-top: 5rem;
 }
 @media (min-width: 768px) {
   .main {
-    padding: 2.5rem;
+    padding: 3rem 3rem 2rem;
   }
+}
+.main img {
+  display: block;
+  max-width: 100%;
+  border-radius: 0.75rem;
+}
+.main ul li {
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+.main ul li:last-child {
+  margin-bottom: 0;
+}
+.main ul li::marker {
+  color: var(--Brown-800);
+}
+.main hr {
+  border: solid 1px var(--Stone-150);
+  margin-top: 2.5rem;
+}
+.main__prep {
+  border-radius: 0.75rem;
+  background-color: var(--Rose-50);
+  padding: 1.5rem 2rem;
+}
+.main__prep li::marker {
+  color: var(--Rose-800);
+}
+.main table {
+  width: 100%;
+  border-spacing: 0;
+}
+.main td {
+  width: 50%;
+  border-bottom: solid 1px var(--Stone-150);
+  padding: 0.75rem 1.5rem;
+}
+.main td:last-child {
+  color: var(--Brown-800);
+  font-weight: 700;
+  padding-left: 0;
+}
+.main tr:last-child td {
+  border: 0;
+}
+.main ol {
+  list-style: none;
+  counter-reset: numbers 1;
+  padding-left: 2rem;
+}
+.main ol li {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.main ol li::before {
+  counter-increment: numbers;
+  content: counter(numbers) '.';
+  font-weight: 700;
+  color: var(--Brown-800);
+  position: absolute;
+  left: -2rem;
 }
 
 .attribution {
